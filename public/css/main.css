@@ -1,0 +1,261 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap);
+/**
+ * General reset 
+ */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  /**
+   * Custom scrollbar
+   */
+  /**
+   * Custom selection color
+   */
+}
+html::-webkit-scrollbar {
+  width: 1.6rem;
+}
+html::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #3379ca;
+  outline: none;
+  border-radius: 0rem;
+}
+html ::-moz-selection {
+  background-color: #6900af;
+  color: #fff;
+}
+html ::selection {
+  background-color: #6900af;
+  color: #fff;
+}
+
+html, body {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  font-size: 1.6rem;
+}
+body main {
+  flex: 1;
+}
+
+/**
+ * Bootstrap reset
+ */
+.tooltip {
+  font-size: 16px;
+}
+.tooltip .tooltip-arrow::before {
+  border-right-color: rgba(58, 58, 58, 0.9);
+}
+.tooltip .tooltip-inner {
+  padding: 8px 16px;
+  background-color: rgba(58, 58, 58, 0.9);
+  border-radius: 4px;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+img.px {
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: pixelated;
+}
+img.aa {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: crisp-edges;
+  image-rendering: optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+a {
+  text-decoration: none;
+  color: #3379ca;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Animations */
+@-webkit-keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Helpers */
+.up {
+  text-transform: uppercase;
+}
+
+.greyscale {
+  filter: grayscale(100%);
+}
+
+[disabled]:hover {
+  cursor: not-allowed;
+}
+
+/* Buttons */
+button {
+  all: unset;
+}
+
+.btn {
+  padding: 12px 16px;
+  font-size: 16px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+
+.text-primary {
+  color: #3379ca !important;
+}
+
+.bg-primary {
+  background-color: #3379ca !important;
+}
+
+.text-secondary {
+  color: #6900af !important;
+}
+
+.bg-secondary {
+  background-color: #6900af !important;
+}
+
+.btn-flat, .btn-theme {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 12px 16px;
+  border: none;
+  transition: 0.2s ease-in-out;
+  font-size: 16px;
+}
+
+/**
+ * Solid button
+ */
+.btn-theme {
+  background-color: #3379ca;
+  color: #fff;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.25);
+}
+.btn-theme:hover {
+  background-color: #4686d0;
+  box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.3);
+}
+.btn-theme:active {
+  background-color: #5b94d5;
+}
+.btn-theme:focus-visible {
+  background-color: #83aee0;
+}
+
+/**
+ * Flat button
+ */
+.btn-flat {
+  background-color: transparent;
+  color: #202020;
+  box-shadow: none;
+}
+.btn-flat:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #202020;
+}
+.btn-flat:active {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #202020;
+}
+.btn-flat:focus-visible {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 16px;
+}
+.card .card-content {
+  padding: 24px;
+}
+.card .card-actions {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid rgba(197, 197, 197, 0.8);
+  margin-top: 24px;
+  text-align: right;
+}
+
+.layer-bredi {
+  background-color: black;
+}
+.layer-bredi .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.layer-bredi .wrapper small {
+  color: white;
+  font-size: 1.4rem;
+}
+.layer-bredi .wrapper a {
+  color: white;
+  font-size: 1.4rem;
+  margin-right: 16px;
+}
+.layer-bredi .wrapper .fab {
+  font-size: 22px;
+}
+
+.modal-theme .modal-dialog .modal-content {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+
+#home {
+  color: inherit;
+}
+
+/*# sourceMappingURL=main.css.map*/

@@ -1,0 +1,15 @@
+@import 'global/variables';
+@import 'global/mixins';
+@import 'global/functions';
+@import 'global/reset';
+@import 'global/fonts';
+@import 'global/colors';
+
+@import 'components/components';
+
+@import '../views/site/pages/home/style.scss';
+@import '../views/site/pages/about/style.scss';
+@import '../views/site/pages/contact/style.scss';
+@import '../views/site/pages/example/style.scss';
+@import '../views/site/pages/help/style.scss';
+@import '../views/site/pages/services/style.scss';
